@@ -17,10 +17,10 @@ using namespace std;
    karakterističnog polinoma nužno realne!                                                                 */
 
 double formula_za_opce_rjesenje(double l1, double l2, double a0, double a1, int n) {
-   if(pow(l1, 2) == -4 * l2) {
+   if (pow(l1, 2) == -4 * l2) {
       double x;
       x = l1 / 2;
-      return a0 * pow(x, n) + (a1 - a0 * x) * n * pow(x, n-1);
+      return (a0 * pow(x, n)) + ((a1 - a0 * x) * n * pow(x, n-1));
    }
    else {
       double y, z;
